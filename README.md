@@ -12,12 +12,10 @@ In this project, we designed and built a website for a library app, a place wher
 
 ## Screenshot
 ![Screenshot](img/img1.png)
-![Screenshot](img/img2.png)
-![Screenshot](img/img3.png)
 
 ## Live Demo
 
-[Live Link](https://benshidanny11.github.io/awesomebooks/)
+[Live Link](https://christianib003.github.io/Awesome-Books/)
 
 
 ## Getting Started
