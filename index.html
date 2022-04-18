@@ -8,6 +8,62 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <script src="js/main.js"></script>
+    <div class="main">
+      <div id="book-container">
+        <h1 class="text-4xl">Awesome Books</h1>
+        <div class="books-list-container" id="bookslist">
+          <ul>
+            <li>
+              <article class="article-container">
+                <h3 class="title">How to learn java script</h3>
+                <h3 class="title">Christian</h3>
+                <button
+                  class="book-remove"
+                  data-book-id="${book.id}"
+                  id="remove-button"
+                >
+                  Remove
+                </button>
+                <hr>
+              </article>
+            </li>
+            <li>
+              <article class="article-container">
+                <h3 class="title">How to learn java script</h3>
+                <h3 class="title">Christian</h3>
+                <button
+                  class="book-remove"
+                  data-book-id="${book.id}"
+                  id="remove-button"
+                >
+                  Remove
+                </button>
+                <hr>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <br />
+        <br />
+      </div>
+      <div class="book-form-container" id="section-addbook">
+        <h2>Add a New Book</h2>
+        <input
+          type="text"
+          placeholder="Title"
+          id="title"
+          class="form-input"
+        /><br />
+        <input
+          type="text"
+          placeholder="Author"
+          id="author"
+          class="form-input"
+        /><br />
+        <div class="button-container">
+          <button id="addbook">Add</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
