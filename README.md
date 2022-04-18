@@ -57,7 +57,7 @@ npx stylelint "**/*.{css,scss}"
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/benshidanny11/awesomebooks/issues).
+Feel free to check the [issues page](https://github.com/Christianib003/awesomebooks/issues).
 
 ## Show your support
 
