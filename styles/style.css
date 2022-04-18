@@ -8,3 +8,12 @@ h3 {
   margin-block-start: 10px;
   margin-block-end: 10px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    margin-bottom: .6rem;
+}
+ 

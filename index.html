@@ -10,37 +10,9 @@
   <body>
     <div class="main">
       <div id="book-container">
-        <h1 class="text-4xl">Awesome Books</h1>
-        <div class="books-list-container" id="bookslist">
-          <ul>
-            <li>
-              <article class="article-container">
-                <h3 class="title">How to learn java script</h3>
-                <h3 class="title">Christian</h3>
-                <button
-                  class="book-remove"
-                  data-book-id="${book.id}"
-                  id="remove-button"
-                >
-                  Remove
-                </button>
-                <hr>
-              </article>
-            </li>
-            <li>
-              <article class="article-container">
-                <h3 class="title">How to learn java script</h3>
-                <h3 class="title">Christian</h3>
-                <button
-                  class="book-remove"
-                  data-book-id="${book.id}"
-                  id="remove-button"
-                >
-                  Remove
-                </button>
-                <hr>
-              </article>
-            </li>
+        <h1 >Awesome Books</h1>
+        <div class="books-list-container">
+          <ul id="book-list">
           </ul>
         </div>
         <br />
@@ -65,5 +37,6 @@
         </div>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
