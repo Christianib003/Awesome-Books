@@ -28,7 +28,7 @@ input {
 }
 
 .article:nth-of-type(odd) {
-  background-color: #E2E2E2;
+  background-color: hsl(0, 0%, 89%);
 }
 
 .books-list-container {
@@ -48,9 +48,9 @@ input {
   margin: 1rem 1rem;
   width: 200px;
   height: 0.2rem;
-  
   background-color: rgb(97, 97, 97);
 }
+
 .button-container {
   justify-content: flex-end;
   display: flex;
