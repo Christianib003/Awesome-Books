@@ -8,36 +8,71 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="main">
-      <div id="book-container">
-        <h1 >Awesome Books</h1>
-        <div class="books-list-container">
-          <ul id="book-list" class="article-container">
-            
-          </ul>
-        </div>
+    <nav class="navbar">
+      <h3>Awesome Books</h3>
+      <ul class="navlist">
+        <li class="navitems active" id="list-books-item">List</li>
+        <li class="vl navitems" id="add-books-item">Add new</li>
+        <li class="vl navitems" id="add-contact-item">Contact</li>
+      </ul>
+    </nav>
+
+    <div class="date-container">
+      <p id="date-time"></p>
+    </div>
+
+    <div id="book-container">
+      <h1 class="text-4xl">Awesome Books</h1>
+      <div class="books-list-container" id="book-list">
+        <p id="bookstatus"></p>
       </div>
-      <hr class="divider"/>
-      
-      <div class="book-form-container" id="section-addbook">
-        <h2>Add a New Book</h2>
-        <input
-          type="text"
-          placeholder="Title"
-          id="title"
-          class="form-input"
-        /><br />
-        <input
-          type="text"
-          placeholder="Author"
-          id="author"
-          class="form-input"
-        /><br />
-        <div class="button-container">
-          <button id="addbook" class="btnadd">Add</button>
-        </div>
+      <br />
+      <br />
+    </div>
+
+    <div class="book-form-container hide" id="section-addbook">
+      <h2>Add a New Book</h2>
+      <input
+        type="text"
+        placeholder="Title"
+        id="title"
+        class="form-input"
+      /><br />
+      <input
+        type="text"
+        placeholder="Author"
+        id="author"
+        class="form-input"
+      /><br />
+      <div class="button-container">
+        <button id="addbook">Add</button>
       </div>
     </div>
+
+    <section class="contact hide" id="contact-section">
+      <h2>Contact Information</h2>
+      <h4>
+        Do you have any questions or you just want to say "Hello"?<br />You can
+        reach out to us!
+      </h4>
+
+      <ul class="contact-details">
+        <li>Our email: danielchristian@gmail.com</li>
+        <li>Our phone number: +250 784 871 958</li>
+        <li>Our address, streetname: KG 500 st</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="the-footer">
+        <p>Copyright &copy;</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <script>docume</script>
+        <p>Daniel & Christian</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

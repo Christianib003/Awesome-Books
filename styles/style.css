@@ -1,54 +1,95 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h3 {
-  margin-block-start: 10px;
-  margin-block-end: 10px;
-}
-
-ul {
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
-input {
-  margin-bottom: 0.6rem;
-}
-
-.article {
+body {
   display: flex;
   justify-content: space-between;
-  padding: 0.3rem;
+  height: 100%;
+  max-height: 100vh;
+  flex-direction: column;
   align-items: center;
+  padding: 0 15px;
 }
 
-.article:nth-of-type(odd) {
-  background-color: hsl(0, 0%, 89%);
+body h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border: solid black 2px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 15px;
+  padding-left: 50px;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.book-container {
+  padding: 10px;
+}
+
+.book-container h1 {
+  padding: 10px;
 }
 
 .books-list-container {
-  width: 500px;
-  border: 0.2rem solid rgb(97, 97, 97);
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: 2px solid rgb(100, 100, 100);
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+hr {
+  color: blue;
 }
 
 .book-remove,
-.btnadd {
-  height: 23px;
-  box-shadow: 2px 3px rgb(97, 97, 97);
+#addbook {
+  padding: 6px;
+  box-shadow: 2px 3px;
   background-color: #fff;
-  font-weight: bold;
 }
 
-.divider {
-  margin: 1rem 1rem;
-  width: 200px;
-  height: 0.2rem;
-  background-color: rgb(97, 97, 97);
+.title {
+  font-size: 14px;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.article-container:nth-of-type(odd) {
+  background-color: #e2e2e2;
+}
+
+#title,
+#author {
+  padding: 12px;
+  margin-top: 1rem;
 }
 
 .button-container {
@@ -57,16 +98,102 @@ input {
   width: 100%;
 }
 
+#addbook {
+  padding: 6px 2rem;
+}
+
+.book-form-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .book-form-container input {
   box-shadow: 1px 1.5px;
   width: 100%;
-  font-weight: bold;
 }
 
 .form-input {
-  padding: 5px;
+  padding: 10px;
 }
 
-#book-container {
+.book-form-container h2 {
+  margin-bottom: 24px;
+  padding: 7px 0;
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  margin: 30px 0;
+}
+
+.contact details {
+  margin: 10px 0;
+}
+
+.contact h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.contact h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.contact ul li {
+  font-size: 27px;
+}
+
+.the-footer {
+  display: flex;
+  width: 100%;
+  align-self: flex-start;
+  border: solid black 2px;
+  padding: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  padding: 10px 0;
+}
+
+.navitems {
+  font-weight: bold;
+}
+
+.navitems:hover {
+  color: rgb(1, 128, 212);
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(1, 128, 212);
+}
+
+.hide {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.date-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
 }

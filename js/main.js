@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-restricted-globals */
 class Books {
@@ -28,7 +29,7 @@ class Books {
     this.books.forEach((book) => {
       const listItem = document.createElement('li');
       listItem.setAttribute('id', 'book-item');
-      listItem.classList.add('article');
+      listItem.classList.add('article-container');
       const bookData = document.createElement('h3');
       bookData.classList.add('title');
       bookData.innerHTML = `${book.title} by ${book.author}`;
@@ -53,3 +54,20 @@ document.getElementById('addbook').addEventListener('click', () => {
 });
 
 new Books().listAllBooks();
+
+window.addEventListener('load', () => {
+  const { DateTime } = luxon;
+  document.getElementById('date-time').innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+});
+
+document.getElementById('list-books-item').addEventListener('click', () => {
+  const list = document.getElementById('book-container');
+  list.classList.remove('hide');
+  const section = document.getElementById('section-addbook');
+  section.classList.add('hide');
+  const contact = document.getElementById('contact-section');
+  contact.classList.add('hide');
+  document.getElementById('add-books-item').classList.remove('active');
+  document.getElementById('list-books-item').classList.add('active');
+  document.getElementById('add-contact-item').classList.remove('active');
+});
