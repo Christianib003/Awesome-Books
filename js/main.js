@@ -71,3 +71,27 @@ document.getElementById('list-books-item').addEventListener('click', () => {
   document.getElementById('list-books-item').classList.add('active');
   document.getElementById('add-contact-item').classList.remove('active');
 });
+
+document.getElementById('add-books-item').addEventListener('click', () => {
+  const sectionAddBook = document.getElementById('section-addbook');
+  sectionAddBook.classList.remove('hide');
+  document.getElementById('add-books-item').classList.add('active');
+  document.getElementById('list-books-item').classList.remove('active');
+  document.getElementById('add-contact-item').classList.remove('active');
+  const bookContainer = document.getElementById('book-container');
+  bookContainer.classList.add('hide');
+  const contact = document.getElementById('contact-section');
+  contact.classList.add('hide');
+});
+
+document.getElementById('add-contact-item').addEventListener('click', () => {
+  const sectionAddBook = document.getElementById('section-addbook');
+  sectionAddBook.classList.add('hide');
+  document.getElementById('add-books-item').classList.remove('active');
+  document.getElementById('list-books-item').classList.remove('active');
+  document.getElementById('add-contact-item').classList.add('active');
+  const bookContainer = document.getElementById('book-container');
+  bookContainer.classList.add('hide');
+  const contact = document.getElementById('contact-section');
+  contact.classList.remove('hide');
+});
