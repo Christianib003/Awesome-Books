@@ -11,7 +11,9 @@ In this project, we designed and built a website for a library app, a place wher
 - Lots of love :heart:
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/91727952/163973413-13635859-67a2-4457-92d1-004c45f6454b.png)
+![image](img/img1.png)
+![image](img/img2.png)
+![image](img/img3.png)
 
 ## Live Demo
 
